@@ -1,0 +1,28 @@
+{
+  "name": "seaquest-2025",
+  "version": "1.0.0",
+  "description": "Juego hecho con Phaser 3 y Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Tu Nombre",
+  "devDependencies": {
+    "electron": "^26.6.10",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "com.tuempresa.seaquest2025",
+    "productName": "Seaquest 2025",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
